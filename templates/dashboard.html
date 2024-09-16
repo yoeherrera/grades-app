@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Dashboard</h1>
+<h2>Notas de {{ session['student_id'] }}</h2>
+<table>
+    <tr>
+        <th>Parcial 1</th>
+        <th>Quiz 1</th>
+        <th>Parcial 2</th>
+        <th>Quiz 2</th>
+        <th>Parcial 3</th>
+        <th>Quiz 3</th>
+        <th>Parcial 4</th>
+        <th>Quiz 4</th>
+    </tr>
+    <tr>
+        <td>{{ grades.parcial1 }}</td>
+        <td>{{ grades.quiz1 }}</td>
+        <td>{{ grades.parcial2 }}</td>
+        <td>{{ grades.quiz2 }}</td>
+        <td>{{ grades.parcial3 }}</td>
+        <td>{{ grades.quiz3 }}</td>
+        <td>{{ grades.parcial4 }}</td>
+        <td>{{ grades.quiz4 }}</td>
+    </tr>
+</table>
+{% endblock %}

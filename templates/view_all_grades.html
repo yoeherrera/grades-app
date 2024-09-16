@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Grades</title>
+</head>
+<body>
+    <h1>All Grades</h1>
+    <table border="1">
+        <tr>
+            <th>Student ID</th>
+            <th>Quiz 1</th>
+            <th>Parcial 1</th>
+            <th>Quiz 2</th>
+            <th>Parcial 2</th>
+            <th>Quiz 3</th>
+            <th>Parcial 3</th>
+            <th>Quiz 4</th>
+            <th>Parcial 4</th>
+        </tr>
+        {% for grade in grades %}
+        <tr>
+            <td>{{ grade.student_id }}</td>
+            <td>{{ grade.quiz1 }}</td>
+            <td>{{ grade.parcial1 }}</td>
+            <td>{{ grade.quiz2 }}</td>
+            <td>{{ grade.parcial2 }}</td>
+            <td>{{ grade.quiz3 }}</td>
+            <td>{{ grade.parcial3 }}</td>
+            <td>{{ grade.quiz4 }}</td>
+            <td>{{ grade.parcial4 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
